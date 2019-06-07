@@ -54,20 +54,6 @@
   >
 
 
-  <!-- RSS -->
-  {{ if and .Site.Params.include_rss .RSSLink }}
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-  {{ end }}
-
-  <style type="text/css">
-      @media (min-width: 800px) and (max-width: 850px) {
-              .navbar:not(.top-nav-collapse) {
-                  background: #1C2331!important;
-              }
-          }
-  </style>
-
-
   <!-- KaTeX -->
   {{ if .Site.Params.katex }}  
     <link rel="stylesheet" href="{{ "js/vendors/katex/katex.min.css"| absURL }}">
